@@ -25,3 +25,15 @@ More info on this can be found on the Ionic [Getting Started](http://ionicframew
 Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
 
 # myFirstIonicApp
+
+if you want to emulate the app, then run
+```bash
+$ ionic emulate ios
+```
+the right result is show the emulator, but when I first run this, there's a wrong, tell me the system can't find the ios-sim
+so you first should install the ios-sim
+run this
+```bash
+$ sudo npm install -g ios-sim
+```
+after this, the emulator come out.
