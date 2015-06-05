@@ -26,6 +26,8 @@ Issues have been disabled on this repo, if you do find an issue or have a questi
 
 # myFirstIonicApp
 
+ The purpose to develop this app is learning the Ionic, so I will not create a new app, I choose the Swarm as an example to develop.
+
 if you want to emulate the app, then run
 ```bash
 $ ionic emulate ios
