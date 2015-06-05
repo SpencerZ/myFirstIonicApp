@@ -37,7 +37,7 @@
       </ion-content>
       <ion-footer-bar align-title="left" class="bar-assertive">
         <div class="buttons">
-          <button class="button" ng-click="checkin()">Check-in</button>
+          <button class="button" ng-click="openCheck()">Check-in</button>
         </div>
         <h1 class="title">Swarm</h1>
         <div class="buttons" ng-click="doSomething()">
@@ -45,5 +45,29 @@
         </div>
       </ion-footer-bar>
     </ion-pane>
+    <script id="check-in.html" type="text/ng-template">
+      <div class="modal">
+
+        <!-- Modal header bar -->
+        <ion-header-bar class="bar-secondary">
+          <h1 class="title">Check in!</h1>
+          <button class="button button-clear button-positive" ng-click="closeModal()">Cancel</button>
+        </ion-header-bar>
+
+        <!-- Modal Content area -->
+        <ion-content>
+          <form ng-submit="checkin()">
+            <div class="list">
+              <label class="item item-input">
+                <input type="text" placeholder="Where are you now?" ng-model="nowplace">
+              </label>
+            </div>
+            <div class="padding">
+              <button type="submit" class="button button-block button-positive">Check-in!</button>
+            </div>
+          </form>
+        </ion-content>
+      </div>
+    </script>
   </body>
 </html>
